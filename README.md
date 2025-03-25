@@ -27,10 +27,10 @@ Set-Location C:\; New-Item "C:\Tools\" -ItemType "Directory"; New-Item "C:\Tools
 Set-MpPreference -ExclusionPath C:\Tools\*, C:\users\*\.nxc\*, C:\users\*\source\*
 
 # Download some tools with winget
-winget install -e --id Python.Python.3.14
-winget install -e --id Notepad++.Notepad++
-winget install -e --id Git.Git
-winget install -e --id OpenVPNTechnologies.OpenVPN
+winget install -e --id Python.Python.3.13 --accept-package-agreements --accept-source-agreements
+winget install -e --id Notepad++.Notepad++ --accept-package-agreements --accept-source-agreements
+winget install -e --id Git.Git --accept-package-agreements --accept-source-agreements
+winget install -e --id OpenVPNTechnologies.OpenVPN --accept-package-agreements --accept-source-agreements
 
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability –Online
