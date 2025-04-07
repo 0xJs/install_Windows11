@@ -11,9 +11,7 @@ Installation notes from when I install my Windows 11 machine for penetration tes
   - Make sure to select ".Net Desktop Development" and "Desktop Development with C++", select the latest Windows SDK and MSVC v version and the Windows Driver kit
 - Open internet explorer and select use recommended settings.
 - [Process hacker](https://processhacker.sourceforge.io/downloads.php)
-- [System Informer](https://systeminformer.sourceforge.io/) - Process Hacker replacement
-- [PE Bear](https://github.com/hasherezade/pe-bear-releases)
-- [x64dbg](https://x64dbg.com/)
+- [PE Bear](https://github.com/hasherezade/pe-bear/releases)
 - [APIMonitor](http://www.rohitab.com/downloads)
 
 ## Tools PowerShell
@@ -35,6 +33,8 @@ winget install -e --id SystemExplorer.SystemExplorer --accept-package-agreements
 winget install -e --id dnSpyEx.dnSpy --accept-package-agreements --accept-source-agreements
 winget install -e --id Microsoft.VisualStudioCode --accept-package-agreements --accept-source-agreements
 winget install Microsoft.WinDbg --accept-package-agreements --accept-source-agreements
+winget install -e --id WinsiderSS.SystemInformer --accept-package-agreements --accept-source-agreements
+winget install -e --id x64dbg.x64dbg --accept-package-agreements --accept-source-agreements
 
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online
