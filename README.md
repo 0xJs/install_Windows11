@@ -13,6 +13,7 @@ Installation notes from when I install my Windows 11 machine for penetration tes
 - [Process hacker](https://processhacker.sourceforge.io/downloads.php)
 - [PE Bear](https://github.com/hasherezade/pe-bear/releases)
 - [APIMonitor](http://www.rohitab.com/downloads)
+- [DebugView](https://learn.microsoft.com/en-us/sysinternals/downloads/debugview)
 
 ## Tools PowerShell
 ```
