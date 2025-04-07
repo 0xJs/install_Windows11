@@ -8,9 +8,7 @@ Installation notes from when I install my Windows 11 machine for penetration tes
 
 ## Download tools manually
 - [Vistual Studio 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false) and install it. 
-  - Make sure to select ".Net Desktop Development" and "Desktop Development with C++"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16&src=myvs&utm_medium=microsoft&utm_source=my.visualstudio.com&utm_campaign=download&utm_content=vs+community+2019) or [here](https://visualstudio.microsoft.com/vs/older-downloads/) and install it. 
-  - Make sure to select ".Net Desktop Development" and "Desktop Development with C++"
+  - Make sure to select ".Net Desktop Development" and "Desktop Development with C++", select the latest Windows SDK and MSVC v version and the Windows Driver kit
 - Open internet explorer and select use recommended settings.
 - [Process hacker](https://processhacker.sourceforge.io/downloads.php)
 - [System Informer](https://systeminformer.sourceforge.io/) - Process Hacker replacement
@@ -31,9 +29,15 @@ winget install -e --id Python.Python.3.13 --accept-package-agreements --accept-s
 winget install -e --id Notepad++.Notepad++ --accept-package-agreements --accept-source-agreements
 winget install -e --id Git.Git --accept-package-agreements --accept-source-agreements
 winget install -e --id OpenVPNTechnologies.OpenVPN --accept-package-agreements --accept-source-agreements
+winget install -e --id Mozilla.Firefox --accept-package-agreements --accept-source-agreements
+winget install -e --id Microsoft.Sysinternals.ProcessMonitor --accept-package-agreements --accept-source-agreements
+winget install -e --id SystemExplorer.SystemExplorer --accept-package-agreements --accept-source-agreements
+winget install -e --id dnSpyEx.dnSpy --accept-package-agreements --accept-source-agreements
+winget install -e --id Microsoft.VisualStudioCode --accept-package-agreements --accept-source-agreements
+winget install Microsoft.WinDbg --accept-package-agreements --accept-source-agreements
 
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
-Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability –Online
+Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online
 
 # Setup pipx
 python -m pip install pipx
