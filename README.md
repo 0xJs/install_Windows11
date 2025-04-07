@@ -36,6 +36,7 @@ winget install -e --id Microsoft.VisualStudioCode --accept-package-agreements --
 winget install Microsoft.WinDbg --accept-package-agreements --accept-source-agreements
 winget install -e --id WinsiderSS.SystemInformer --accept-package-agreements --accept-source-agreements
 winget install -e --id x64dbg.x64dbg --accept-package-agreements --accept-source-agreements
+winget install -e --id Hex-Rays.IDA.Free --accept-package-agreements --accept-source-agreements
 
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online
