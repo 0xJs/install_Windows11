@@ -49,7 +49,8 @@ python -m pipx ensurepath
 pipx install virtualenv
 
 # Pipx tools install
-python -m pipx install graphspy
+pipx install graphspy
+pipx install git+https://github.com/Pennyw0rth/NetExec
 
 # Download AD tools
 Set-Location C:\Tools\AD
@@ -74,7 +75,6 @@ git clone https://github.com/PowerShellMafia/PowerSCCM
 
 Invoke-WebRequest https://www.heidisql.com/downloads/releases/HeidiSQL_12.8_64_Portable.zip -OutFile HeidiSQL_12.8_64_Portable.zip; Expand-Archive HeidiSQL_12.8_64_Portable.zip; Remove-Item HeidiSQL_12.8_64_Portable.zip
 Invoke-WebRequest https://github.com/MichaelGrafnetter/DSInternals/releases/download/v4.14/DSInternals_v4.14.zip -OutFile DSInternals_v4.14.zip; Expand-Archive DSInternals_v4.14.zip; Remove-Item DSInternals_v4.14.zip
-Invoke-WebRequest https://github.com/Pennyw0rth/NetExec/releases/download/v1.3.0/nxc.exe.zip -OutFile nxc.exe.zip; Expand-Archive nxc.exe.zip; Remove-Item nxc.exe.zip
 
 # Download Evasion tools
 Set-Location C:\Tools\Evasion\
@@ -89,17 +89,8 @@ Invoke-WebRequest https://github.com/mkaring/ConfuserEx/releases/download/v1.6.0
 # Download Azure Tools
 Set-Location C:\Tools\Azure\
 
-# Azure AD
-Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/azuread.2.0.2.182.nupkg -OutFile azuread.2.0.2.182.zip; Expand-Archive azuread.2.0.2.182.zip; Remove-Item azuread.2.0.2.182.zip
-
-# Azure AD Preview
-Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/azureadpreview.2.0.2.183.nupkg -OutFile azureadpreview.2.0.2.183.zip; Expand-Archive azureadpreview.2.0.2.183.zip; Remove-Item azureadpreview.2.0.2.183.zip
-
-# MS ONline
-Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/msonline.1.1.183.81.nupkg -OutFile msonline.1.1.183.81.zip; Expand-Archive msonline.1.1.183.81.zip; Remove-Item msonline.1.1.183.81.zip
-
 # Bloodhound
-Invoke-WebRequest https://github.com/BloodHoundAD/AzureHound/releases/download/v2.2.1/azurehound-windows-amd64.zip -OutFile azurehound-windows-amd64.zip; Expand-Archive azurehound-windows-amd64.zip; Remove-Item azurehound-windows-amd64.zip
+Invoke-WebRequest https://github.com/SpecterOps/AzureHound/releases/download/v3.0.0/AzureHound_v3.0.0_windows_amd64.zip -OutFile azurehound-windows-amd64.zip; Expand-Archive azurehound-windows-amd64.zip; Remove-Item azurehound-windows-amd64.zip
 
 git clone https://github.com/NetSPI/MicroBurst
 git clone https://github.com/Gerenios/AADInternals
